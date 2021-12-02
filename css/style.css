@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* 
+Cores:
+
+#4A2700
+#8F4C00
+#A35700
+#F28100
+#FFE0C7
+
+ */
+
+:root{
+	--c1:#4A2700;
+	--c2:#8F4C00;
+	--c3:#A35700;
+	--c4:#F28100;
+	--c5:#FFE0C7;
+}
+
+body{
+	font-family: Ubuntu, var(--bs-body-font-family);
+	background-color: var(--c1);
+}
+ 
+.c1{color: var(--c1);}
+.c2{color: var(--c2);}
+.c3{color: var(--c3);}
+.c4{color: var(--c4);}
+.c5{color: var(--c5);}
+
+.bg-c1{background-color: var(--c1);}
+.bg-c2{background-color: var(--c2);}
+.bg-c3{background-color: var(--c3);}
+.bg-c4{background-color: var(--c4);}
+.bg-c5{background-color: var(--c5);}
+
+.nav-top{
+	background-color: var(--c2);
+}
+
+.nav-top .logo, .nav-top .menu{
+	width: auto;
+}
+
+.menu > ul{
+	padding: 1rem 1rem;
+	gap: 1rem;
+	margin-bottom: 0;
+}
