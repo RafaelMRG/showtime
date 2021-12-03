@@ -19,6 +19,11 @@ Cores:
 	--c5:#FFE0C7;
 }
 
+::selection{
+	background-color: var(--c4);
+	color: var(--c5);
+}
+
 body{
 	font-family: Ubuntu, var(--bs-body-font-family);
 	background-color: var(--c1);
@@ -40,12 +45,110 @@ body{
 	background-color: var(--c2);
 }
 
-.nav-top .logo, .nav-top .menu{
-	width: auto;
+.cards-actions{
+	gap: 1rem;
 }
 
-.menu > ul{
-	padding: 1rem 1rem;
+.card-actions{
+	background-color: var(--c3);
+	width: 30ch;
+	height: 20ch;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 1.5rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	text-align: center;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transition: transform 250ms ease, box-shadow 250ms ease;
+}
+
+.card-actions:hover{
+	transform: translateY(-5px);
+	box-shadow: rgba(0, 0, 0, 0.34) 0px 8px 12px;
+}
+
+.input-group-text{
+	background-color: var(--c2);
+	border-color: rgba(0, 0, 0, 0.25);
+	color: var(--c5);
+}
+
+.form-control{
+	background-color: var(--c4);
+	border-color: rgba(0, 0, 0, 0.25);
+	color: #FFF;
+}
+
+.form-control:focus {
+	color: #FFF;
+	background-color: var(--c4);
+	border-color: rgb(48, 48, 48);
+	outline: 0;
+	box-shadow: 0 0 0 .25rem rgba(242, 129, 0, 0.25);
+}
+
+.form-control::selection{
+	background-color: var(--c1);
+	color: var(--c5);
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: var(--c2);
+	border-color: var(--c2);
+}
+.btn-primary:hover {
+	color: #fff;
+	background-color: var(--c3);
+	border-color: var(--c3);
+}
+
+.card-show{
+	height: 3rem;
+	background-color: var(--c5);
+	color: var(--c1);
+	display: grid;
+	grid-template-columns: 0.5fr 6fr 1fr 1fr 2fr 5fr;
+	align-items: center;
+	align-content: center;
+	max-width: 100%;
+}
+
+.card-show p{
+	margin: 0;
+}
+
+.card-show__observacao{
+	overflow: hidden;
+}
+
+.card-show__observacao > small:nth-child(2){
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.shows{
 	gap: 1rem;
-	margin-bottom: 0;
+}
+
+@media (max-width: 992px){
+	.card-show{
+		display: flex;
+		flex-flow: column;
+		height: max-content;
+		width: 30ch;
+		align-items: flex-start;
+		padding: 10px;
+		gap: 0.25rem;
+	}
+	
+	.card-show__observacao{
+		max-width: 100%;
+	}
+	
 }

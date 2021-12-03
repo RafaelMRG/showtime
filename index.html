@@ -30,8 +30,8 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
-						<li class="nav-item">
+					<ul class="navbar-nav py-2 ms-5">
+						<li class="nav-item me-4">
 							<a
 								class="nav-link active"
 								aria-current="page"
@@ -39,12 +39,12 @@
 								><i class="fas fa-home"></i> Home</a
 							>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item me-4">
 							<a class="nav-link" href="#"
 								><i class="fas fa-couch"></i> Detalhes</a
 							>
 						</li>
-						<li class="nav-item">
+						<li class="nav-item me-4">
 							<a class="nav-link" href="#"
 								><i class="fas fa-question-circle"></i> Como
 								funciona</a
@@ -55,14 +55,97 @@
 			</div>
 		</nav>
 
-		<main class="container py-5 c5">
-			<header>
-				<h2>Histórico de seriados.</h2>
-				<h6>
-					Registre seu progresso de seriados assistidos e adicione
-					notas do jeito que você quiser.
-				</h6>
+		<main class="c5">
+			<header class="py-5 bg-warning">
+				<div class="container">
+					<div class="row c2">
+						<h1>Histórico de seriados.</h1>
+						<h6>
+							Registre seu progresso de seriados assistidos e
+							adicione notas do jeito que você quiser.
+						</h6>
+					</div>
+				</div>
 			</header>
+
+			<section class="py-5">
+				<div class="container">
+					<div class="row justify-content-center cards-actions">
+						<div class="card card-actions">
+							<i class="fas fa-film fa-3x"></i>
+							<p class="lead">Adicione um seriado</p>
+						</div>
+
+						<div class="card card-actions">
+							<i class="fas fa-search fa-3x"></i>
+							<p class="lead">Pesquisar</p>
+						</div>
+
+						<div class="card card-actions">
+							<i class="fas fa-hourglass-half fa-3x"></i>
+							<p class="lead">Ver horas assistidas</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-5">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-10">
+							<div class="input-group flex-nowrap">
+								<span class="input-group-text" id="addon-wrapping">Pesquisar seriado</span>
+								<input
+									type="text"
+									class="form-control"
+									aria-label="Username"
+									aria-describedby="addon-wrapping"
+								/>
+							</div>
+						</div>
+						<div class="col-12 col-md-2 mt-3 mt-md-0">
+							<button type="button" class="btn btn-primary w-100">Pesquisar</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			<section class="py-5">
+				<div class="container">
+					<div class="row shows justify-content-md-start justify-content-center">
+						
+						<div class="card card-show shadow">
+							<div>
+								<i class="fas fa-film fa-lg"></i>
+							</div>
+							<div>
+								<p class="h5">
+									Seriado 1
+								</p>
+							</div>
+							<div class="d-flex flex-column">
+								<small>Temp.</small>
+								<small class="text-black-50">1</small>
+							</div>
+							<div class="d-flex flex-column">
+								<small>Ep.</small>
+								<small class="text-black-50">1</small>
+							</div>
+							<div class="d-flex flex-column">
+								<small>Duração do ep.</small>
+								<small class="text-black-50">43 min</small>
+							</div>
+							<div class="d-flex flex-column card-show__observacao">
+								<small>Observações</small>
+								<small class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nihil! Lorem ipsum dolor sit amet.</small>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			
 		</main>
 	</body>
 </html>
