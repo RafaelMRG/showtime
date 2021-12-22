@@ -19,6 +19,11 @@ Cores:
 	--c5:#FFE0C7;
 }
 
+::-moz-selection{
+	background-color: var(--c4);
+	color: var(--c5);
+}
+
 ::selection{
 	background-color: var(--c4);
 	color: var(--c5);
@@ -91,6 +96,11 @@ body{
 	box-shadow: 0 0 0 .25rem rgba(242, 129, 0, 0.25);
 }
 
+.form-control::-moz-selection{
+	background-color: var(--c1);
+	color: var(--c5);
+}
+
 .form-control::selection{
 	background-color: var(--c1);
 	color: var(--c5);
@@ -101,10 +111,11 @@ body{
 	background-color: var(--c2);
 	border-color: var(--c2);
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active,.btn-primary:focus, .btn-primary:active:focus  {
 	color: #fff;
 	background-color: var(--c3);
 	border-color: var(--c3);
+	box-shadow: 0 0 0 .25rem rgba(242, 129, 0, 0.25);
 }
 
 .card-show{
@@ -140,6 +151,8 @@ body{
 	.card-show{
 		display: flex;
 		flex-flow: column;
+		height: -webkit-max-content;
+		height: -moz-max-content;
 		height: max-content;
 		width: 30ch;
 		align-items: flex-start;
